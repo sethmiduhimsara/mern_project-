@@ -16,7 +16,7 @@ function Navbar() {
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <Link class="nav-link" to="/insert">Add Employee</Link>
+            <Link class="nav-link" to="/insert">Add Employees</Link>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
