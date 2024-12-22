@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./insertEmployee.css";
 import axios from "axios";
+import { useParams, useNavigate } from "react-router-dom";
 
 export const InsertEmployee = () => {
   // Manage state
@@ -10,7 +11,9 @@ export const InsertEmployee = () => {
     address: "",
     nic: "",
   });
-
+ const { id } = useParams();
+  const navigate = useNavigate();
+  
   // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,6 +28,7 @@ export const InsertEmployee = () => {
     e.preventDefault();
     axios.post("http://localhost:3000/api/employees", employeeData)
       .then(() => {
+        navigate("/");
         alert("Employee added successfully!");
         setEmployeedata({
           employeeID: "",

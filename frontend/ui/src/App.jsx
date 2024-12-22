@@ -4,6 +4,9 @@ import { Footer } from "./components/footer/Footer";
 import Employeelist from "./components/employee_list/Employeelist";
 import InsertEmployee from "./components/addemployee/insertEmployee";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ShowEmployeeDetails from './components/showemployeedetails/ShowEmployeedetails';
+import UpdateDetails from './components/updateform/updateDetails';
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Employeelist />} />
           <Route path="/insert" element={<InsertEmployee />} />
+          <Route path="/Showdetails/:id" element={<ShowEmployeeDetails/>} />
+          <Route path="/updatedetails/:id" element={<UpdateDetails/>} />
         </Routes>
         <Footer />
       </Router>
