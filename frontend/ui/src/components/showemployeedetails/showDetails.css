@@ -1,0 +1,78 @@
+/* ShowEmployeeDetail.css */
+
+.show-employee-details {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    text-decoration: none;
+    color: white;
+    background-color: #d9534f;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .back-button:hover {
+    background-color: #c9302c;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .custom-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .custom-table th {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .custom-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .custom-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .edit-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #0275d8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .edit-button:hover {
+    background-color: #025aa5;
+  }
+  

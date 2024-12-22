@@ -1,8 +1,8 @@
 import React from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export const Employeecard = ({ employees }) => {
-
   const onDeleteClick = (id) => {
     axios
       .delete(`http://localhost:3000/api/employees/${id}`)
@@ -12,7 +12,7 @@ export const Employeecard = ({ employees }) => {
       .catch((err) => {
         console.error("Delete error", err);
       });
-    }
+  };
 
   return (
     <div style={styles.container}>
@@ -30,19 +30,25 @@ export const Employeecard = ({ employees }) => {
           <p style={styles.text}>{employees.nic}</p>
         </div>
         <div style={styles.actions}>
-        <button style={styles.button} onClick={() => onDeleteClick(employees._id)}>
-              Delete
-            </button>
-            <button style={styles.button} >
-             Update
-            </button>
+          <button
+            style={styles.button}
+            onClick={() => onDeleteClick(employees._id)}
+          >
+            Delete
+          </button>
+
+          {/* update */}
+
+          <Link to={`/Showdetails/${employees._id}`} style={styles.button}>
+            Update
+          </Link>
+
+
         </div>
       </div>
     </div>
   );
-
-}
-
+};
 
 // Inline styles for simplicity
 const styles = {
