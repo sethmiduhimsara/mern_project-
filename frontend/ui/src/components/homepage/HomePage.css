@@ -1,0 +1,105 @@
+.homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .content-container {
+    display: flex;
+    max-width: 1200px;
+    width: 90%;
+    align-items: center;
+  }
+  
+  .text-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .text-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .text-section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+  
+  .ride-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .input-field {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  .primary-button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    align-items: center; /* Center the image vertically */
+    padding-right: 1px; /* Adjust this value to move it slightly more */
+    margin-left: 100px; 
+    margin-top: -120px; 
+  }
+  
+  .illustration {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .navigate-button {
+    display: inline-block;
+    margin-top: 20px; /* Adjust spacing between the text and button */
+    padding: 10px 20px;
+    background-color: #007bff; /* Button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .navigate-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  

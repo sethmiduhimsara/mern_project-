@@ -6,6 +6,8 @@ import InsertEmployee from "./components/addemployee/insertEmployee";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ShowEmployeeDetails from './components/showemployeedetails/ShowEmployeedetails';
 import UpdateDetails from './components/updateform/updateDetails';
+import HomePage from "./components/homepage/homepage";
+
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route path="/home" element={<HomePage/>} />
           <Route path="/" element={<Employeelist />} />
           <Route path="/insert" element={<InsertEmployee />} />
           <Route path="/Showdetails/:id" element={<ShowEmployeeDetails/>} />
