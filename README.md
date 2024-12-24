@@ -88,3 +88,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Contact
 Your Name - @sethmiduhimisara
 Project Link: https://github.com/sethmiduhimisara/mern_project
+![Screenshot 2024-12-24 154344](https://github.com/user-attachments/assets/c3af9d4b-20f7-469b-a86c-878f466d417e)
+
